@@ -14,6 +14,8 @@ class CartTile extends StatelessWidget {
   Widget build(BuildContext context) {
 
     Widget _buildContent(){
+      CartModel.of(context).updatePrices();
+
       return Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
